@@ -36,7 +36,3 @@ PlayerSpaceShip / EnemyBlock / Bunkers / Missiles / Bonus / SoundManager
 GameObject → SimpleObject / SpaceShip   # hiérarchie d'objets
 Vecteur2D           # utilitaire vectoriel
 ```
-
----
-🔗 **Fiche projet** : [afouanee.dev/projects/space-invaders](https://afouanee.dev/projects/space-invaders)
-👤 **Auteur** : Afouane MOUHAMAD — [Portfolio](https://afouanee.dev) · [LinkedIn](https://linkedin.com/in/afouane-mouhamad)
