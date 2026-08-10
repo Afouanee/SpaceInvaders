@@ -22,10 +22,13 @@ Projet ESIEE de Programmation Orientée Objet : un clone du célèbre Space Inva
 - **Outils** : Visual Studio (2017+), cible x86
 
 ## ▶️ Lancer le projet
-```text
-Ouvrir SpaceInvaders.sln dans Visual Studio (2017+, .NET 4+) puis lancer avec F5.
-Alternative : compiler avec msbuild. Windows uniquement.
-```
+Le fichier `.csproj` est dans l'ancien format MSBuild (ToolsVersion 12.0). Pour l'ouvrir et le compiler :
+
+1. Installer **Visual Studio** (Community suffit) avec le workload **".NET desktop development"** coché à l'installation — indispensable pour ce format de projet.
+2. Ouvrir `SpaceInvaders.sln` dans Visual Studio.
+3. Lancer avec **F5** (ou Ctrl+F5 sans debug). Le build cible x86 / .NET Framework 4.8.
+
+Alternative en ligne de commande : `msbuild SpaceInvaders.sln` depuis une invite de commande développeur Visual Studio (Developer Command Prompt), toujours sous Windows.
 
 ## 📂 Structure
 ```

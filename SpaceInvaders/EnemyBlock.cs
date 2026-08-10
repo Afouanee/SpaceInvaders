@@ -262,16 +262,15 @@ namespace SpaceInvaders
         /// </summary>
         /// <param name="gameInstance">The Current Instance of the game</param>
         /// <param name="deltaT">Time elapsed since the last update</param>
-        private void BonusDisplay(Game gameInstance, double deltaT) 
+        private void BonusDisplay(Game gameInstance, double deltaT)
         {
             double probability = 0.2;
-            double randomValue = rnd.NextDouble();
             foreach (SpaceShip ship in enemyShips)
             {
                 ship.Update(gameInstance, deltaT);
                 if (!ship.IsAlive())
                 {
-
+                    double randomValue = rnd.NextDouble();
                     if (randomValue < probability)
                     {
                         AddBonus(gameInstance);
@@ -308,6 +307,7 @@ namespace SpaceInvaders
             if (toRemove.Count > 0)
             {
                 UpdateSize();
+                toRemove.Clear();
             }
         }
         /// <summary>

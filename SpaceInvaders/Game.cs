@@ -230,11 +230,6 @@ namespace SpaceInvaders
                 state = GameState.Play;
                 ReleaseKey(Keys.P);
             }
-            if (keyPressed.Contains(Keys.P))
-            {
-                state = GameState.Pause;
-                ReleaseKey(Keys.P);
-            }
         }
 
         /// <summary>
